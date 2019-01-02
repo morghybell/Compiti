@@ -11,7 +11,7 @@ namespace Compiti_Vacanze
         static void Main(string[] args)
         {
             int a = int.MaxValue;
-            Console.WriteLine(a);  //Stampa il valore massimo positivo rappresentabile in 32 bit
+            Console.WriteLine(a);  //Stampa il valore massimo positivo rappresentabile in 32bit
             if (a + 1 < -int.MaxValue)
             {
                 Console.WriteLine(a + 1);  //Stampa il valore minimo negativo rappresentabile in 32 bit
