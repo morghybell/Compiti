@@ -26,10 +26,10 @@ namespace Compiti_Vacanze
             //value = value + 1;
             somma = somma + value;
             Console.WriteLine($"L'opposto del valore da lei inserito è {value} e la somma del valore iniziale con il suo opposto è {somma}");
-            long number = 55555;
-            Console.WriteLine(Convert.ToString(number, 2));
-            short number1 = (short)number;
-            Console.WriteLine(number1);
+            long number = 55555;  //Associa alla variabile number il valore 55555
+            Console.WriteLine(Convert.ToString(number, 2));  //Stampa in binario il valore 55555
+            short number1 = (short)number;  //Associa il valore della variabile number di tipo long alla variabile number1 di tipo short convertendolo.
+            Console.WriteLine(number1);  //Stampa il valore di tipo short ottenuto
 
             Console.ReadLine();
         }
