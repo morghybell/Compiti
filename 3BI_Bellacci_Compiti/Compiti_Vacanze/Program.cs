@@ -20,12 +20,12 @@ namespace Compiti_Vacanze
             int c = -b;  //Associa alla variabile c il valore -b
             Console.WriteLine(Convert.ToString(b, 2));  //Stampa in binario il valore -128
             Console.WriteLine(Convert.ToString(c, 2));  //Stampa in binario il valore 128
-            int value = 31;
+            int value = Convert.ToInt32(Console.ReadLine());
             int somma = value;
             value = ~value + 1; //NOT
             //value = value + 1;
             somma = somma + value;
-            Console.WriteLine($"{value} e {somma}");
+            Console.WriteLine($"L'opposto del valore da lei inserito è {value} e la somma del valore iniziale con il suo opposto è {somma}");
             long number = 55555;
             Console.WriteLine(Convert.ToString(number, 2));
             short number1 = (short)number;
