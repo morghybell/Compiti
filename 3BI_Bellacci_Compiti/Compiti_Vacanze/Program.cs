@@ -12,11 +12,14 @@ namespace Compiti_Vacanze
         {
             int a = int.MaxValue;
             Console.WriteLine(a);  //Stampa il valore massimo positivo rappresentabile in 32 bit
-            Console.WriteLine(a + 1);  //Stampa il valore minimo negativo rappresentabile in 32 bit
-            int b = -128;
-            int c = -b;
-            Console.WriteLine(Convert.ToString(b, 2));
-            Console.WriteLine(Convert.ToString(c, 2));
+            if (a + 1 < -int.MaxValue)
+            {
+                Console.WriteLine(a + 1);  //Stampa il valore minimo negativo rappresentabile in 32 bit
+            }
+            int b = -128;  //Associa alla variabile b il valore -128
+            int c = -b;  //Associa alla variabile c il valore -b
+            Console.WriteLine(Convert.ToString(b, 2));  //Stampa in binario il valore -128
+            Console.WriteLine(Convert.ToString(c, 2));  //Stampa in binario il valore 128
             int value = 31;
             int somma = value;
             value = ~value + 1; //NOT
